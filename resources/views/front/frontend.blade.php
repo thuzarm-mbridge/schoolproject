@@ -9,8 +9,8 @@
 <section class="mt-5 mb-5">
     <div class="container">
       <div class="section-intro text-center">
-        <h2 class="">Our Training <span style="color: green; font-size: 40px;">Schools</span></h2>
-       
+        <h2 class="">Our Training School<span style="color: green; font-size: 40px;">Schools</span></h2>
+
       </div>
 
   <div class="row">
@@ -34,7 +34,7 @@
  @endforeach
 </div>
 
-      
+
     </div>
   </section>
 
@@ -42,7 +42,7 @@
     <div class="container mb-5">
       <div class="section-intro text-center">
         <h2 class="mt-5 mb-5">Our <span style="color: green; font-size: 40px;">Students</span></h2>
-       
+
       </div>
 
    <div class="row" style="">
@@ -57,14 +57,14 @@
         <li class="list-group-item">{{$student->address}}</li>
         <li class="list-group-item">{{$student->ssname}}</li>
       </ul>
-     
+
     </div>
         @endforeach
       </div>
-    
-     
 
-      
+
+
+
     </div>
   </section>
 
