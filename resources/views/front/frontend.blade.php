@@ -9,7 +9,9 @@
 <section class="mt-5 mb-5">
     <div class="container">
       <div class="section-intro text-center">
+
         <h2 class="">Our Training School<span style="color: green; font-size: 40px;">Schools</span></h2>
+ 
 
       </div>
 
