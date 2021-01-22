@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lawride Lawyer - Home</title>
+  <title>ILEC School</title>
   <link rel="icon" href="{{asset('img/Fevicon.png')}}" type="image/png">
 
   <link rel="stylesheet" href="{{asset('vendors/bootstrap/bootstrap.min.css')}}">
@@ -44,7 +44,7 @@
     <div class="mymenu">
       <nav class="navbar navbar-expand-lg">
         <div class="container box_1620">
-          <a class="navbar-brand " href="index.html"><h3 style="font-style: bold; color:green">MYSCHOOL</h3></a>
+          <a class="navbar-brand " href="index.html"><h3 style="font-style: bold; color:green">ILEC SCHOOL</h3></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -57,27 +57,27 @@
             </li>
             @if(Sentinel::check())
             <li class="nav-item active"><a class="nav-mylink" href="/logout">Logout</a>
-            </li> 
+            </li>
             @else
-            <li class="nav-item active"><a class="nav-mylink" href="/register">Register</a></li> 
+            <li class="nav-item active"><a class="nav-mylink" href="/register">Register</a></li>
             <li class="nav-item active"><a class="nav-mylink" href="/login">login</a>
             </li>
             @endif
             </ul>
-          </div> 
+          </div>
         </div>
       </nav>
     </div>
   </header>
   <!--================Header Menu Area =================-->
 
-  <!--================ Hero Banner start =================-->      
- 
+  <!--================ Hero Banner start =================-->
+
   <!--================ Hero Banner end =================-->
 
 
 
-      
+
       @yield('content')
 
   <!-- ================ start footer Area ================= -->
@@ -86,9 +86,9 @@
       <div class="row">
         <div class="col-lg-3  col-md-6 col-sm-6">
           <div class="single-footer-widget">
-            <h6>About School</h6>
+            <h6>About Our School</h6>
             <p>
-              The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point 
+              The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point
             </p>
           </div>
         </div>
@@ -104,22 +104,22 @@
                   <li><a href="#">Contact</a></li>
                 </ul>
               </div>
-                                 
-            </div>              
+
+            </div>
           </div>
-        </div>              
+        </div>
         <div class="col-lg-3  col-md-6 col-sm-6">
           <div class="single-footer-widget">
             <h6>Newsletter</h6>
             <p>
-              For business professionals caught between high OEM price and mediocre print and graphic output.                 
-            </p>                
+              For business professionals caught between high OEM price and mediocre print and graphic output.
+            </p>
             <div id="mc_embed_signup">
               <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
                 <div class="input-group d-flex flex-row">
                   <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                  <button class="btn mybtn"><span class="lnr lnr-location"></span></button>    
-                </div>                  
+                  <button class="btn mybtn"><span class="lnr lnr-location"></span></button>
+                </div>
                 <div class="mt-10 info"></div>
               </form>
             </div>
@@ -139,7 +139,7 @@
               <li><img src="{{asset('img/instagram/i8.jpg')}}" alt=""></li>
             </ul>
           </div>
-        </div>            
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
