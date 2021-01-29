@@ -36,7 +36,7 @@ class SchoolController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {   
+    {
 
         $request->validate([
             "scname" => 'required',
@@ -47,9 +47,9 @@ class SchoolController extends Controller
 
         ]);
 
-         $imageName = time().'.'.$request->image->extension();  
+        $imageName = time().'.'.$request->image->extension();
         $request->image->move(public_path('images'), $imageName);
-        
+
 
         School::create([
           "scname" => request('scname'),
@@ -62,13 +62,7 @@ class SchoolController extends Controller
 
         return redirect()->route('school.index');
 
-
-
-           
     }
-
-         
-
 
     /**
      * Display the specified resource.
@@ -89,7 +83,7 @@ class SchoolController extends Controller
      */
     public function edit($id)
     {
-        
+
         $school = School::find($id);
         return view('school.edit', compact('school'));
     }
@@ -102,32 +96,32 @@ class SchoolController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {   
-        
+    {
+
         $request->validate([
             "scname" => 'required',
             "scemail" => 'required',
             "scphone"=>'required',
             "scaddress"=>'required',
             "image" => 'required|mimes:jpeg,png,jpg|max:50000'
-            
-            
+
+
     ]);
 if($request->hasfile('image')){
-         
-             $imageName = time().'.'.$request->image->extension();  
+
+             $imageName = time().'.'.$request->image->extension();
         $request->image->move(public_path('images'), $imageName);
          }else {
             $imageName=request('oldimg');
         }
-        
+
          $school = School::find($id);
          $school->scname = request('scname');
          $school->scemail = request('scemail');
          $school->scphone = request('scphone');
          $school->scaddress = request('scaddress');
          $school->scprofile = $imageName;
-         
+
 
          $school->save();
          return redirect()->route('school.index');
@@ -142,7 +136,7 @@ if($request->hasfile('image')){
      */
     public function destroy($id)
     {
-        
+
         $school = School::find($id);
         $school->delete();
         return redirect()->route('school.index');

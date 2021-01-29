@@ -17,6 +17,8 @@ Route::resource('school','SchoolController');
 
 Route::resource('student','StudentController');
 
+Route::resource('product','ProductController');
+
 Route::resource('/','FrontendController');
 
 Route::group(['middleware'=>'visitor'],function(){

@@ -4,9 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\School;
-
-use App\Student;
+use App\Product;
 
 use Illuminate\Support\Facades\DB;
 
@@ -19,12 +17,8 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        $students=DB::table('students')
-        ->join('schools','schools.id','=','students.school_id')
-        ->select('students.*','schools.scname as ssname')
-        ->get();
-        $schools = School::all();
-        return view('front.frontend',compact('schools','students'));
+        $products = Product::all();
+        return view('front.frontend',compact('products'));
     }
 
     /**
